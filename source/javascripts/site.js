@@ -1,9 +1,9 @@
-import constants from './constants'
+import constants from './constants';
 
 // Wrap console log to show arrow functions work
 let log = (text) => {
     console.info(text);
-}
+};
 
 // We have the possibility to have environment specific config
 if (ENV_DEVELOPMENT) {
@@ -11,4 +11,3 @@ if (ENV_DEVELOPMENT) {
 } else if (ENV_PRODUCTION) {
     log(constants.PROD);
 }
-
